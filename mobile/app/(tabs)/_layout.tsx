@@ -2,6 +2,14 @@ import { Tabs } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { SvgXml } from "react-native-svg";
 
+import * as NavigationBar from 'expo-navigation-bar';
+import { Platform } from 'react-native';
+
+if (Platform.OS === 'android') {
+    NavigationBar.setBackgroundColorAsync('#FFFFFF');
+    NavigationBar.setButtonStyleAsync('dark');
+}
+
 const homeIconXml = `<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
 <g>
 	<path d="M256,319.841c-35.346,0-64,28.654-64,64v128h128v-128C320,348.495,291.346,319.841,256,319.841z"/>

@@ -18,7 +18,17 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "navigationBar": {
+        "visible": "always",
+        "backgroundColor": "#FFFFFF",
+        "barStyle": "dark-content"
+      },
+      "statusBar": {
+        "barStyle": "dark-content",
+        "backgroundColor": "#FFFFFF",
+        "translucent": false
+      }
     },
     "ios": {
       "bundleIdentifier": "com.mintwatermelon.uvmanager",
